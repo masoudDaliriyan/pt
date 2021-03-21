@@ -1,4 +1,5 @@
 import "./index.css";
+import { isPersian } from "./packages/isPersian";
 
 class MyLibrary {
   constructor() {
@@ -11,3 +12,11 @@ class MyLibrary {
 }
 
 export default MyLibrary;
+
+export function pt() {
+  return {
+    isPersian,
+  };
+}
+
+window.pt = pt;
